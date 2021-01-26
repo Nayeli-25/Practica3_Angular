@@ -1,0 +1,7 @@
+<ul class="personas">
+  <li *ngFor="let persona of personas$ | async"
+      [class.selected]="persona.id === selectedId"
+      [routerLink]="['/persona', persona.id]">
+      <span class="badge">{{persona.id}}</span> {{persona.nombre}} {{persona.apellido}}
+  </li>
+</ul>

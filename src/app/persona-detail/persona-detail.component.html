@@ -1,0 +1,22 @@
+<div *ngIf="persona$ | async as persona">
+    <button class="btn1" [ngClass]="{si: show, no: !show}" (click)="cambiaEstado()"> {{texto}} </button>
+    <div class="details" *ngIf="show">
+      <h2> Detalles: {{persona.nombre | uppercase}} </h2>
+      <div><span>id: </span>{{persona.id}}</div>
+      <div>
+        <label>Nombre:
+          <input class="textbox" [(ngModel)]="persona.nombre" placeholder="nombre"/>
+        </label><br>
+        <label>Apellido:
+          <input class="textbox" [(ngModel)]="persona.apellido" placeholder="apellido"/>
+        </label><br>
+        <label>Edad:  
+          <input class="textbox" [(ngModel)]="persona.edad" placeholder="edad"/>
+        </label> 
+      </div>
+    </div>
+    <p>
+        <button class="btn2" (click)="backPersonas(persona)">Back</button>
+    </p>
+    <!--<pre>{{ persona | json }}</pre>-->
+  </div>

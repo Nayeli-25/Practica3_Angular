@@ -1,0 +1,58 @@
+.details {
+    display: block;
+    position: absolute;
+    background-color: #3e567054;
+    padding: 40px;
+    top: 100px;
+    left: 200px;
+    border-radius: 4px;
+    font-style: italic;
+    font-family: Cambria;
+}
+
+.textbox {
+    border: none;
+    border-bottom: 2px solid #d2d8e2;
+    font-size: 16px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    background: none;
+    color: #2E3133;
+    }
+    .textbox:focus
+    {
+    color: purple;
+    }
+  
+  button {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    top: 365px;
+    padding: 8px 10px;
+    border-radius: 4px;
+  }
+
+  .btn1 {
+    left: 445px;
+  }
+
+  .btn2 {
+    background-color: rgb(196, 197, 142);
+    left: 385px;
+  }
+
+  .si{
+    background-color: rgba(188, 143, 143, 0.842);
+  }
+  .no{
+    background-color: #3e567052;
+  }
+  
+  button:hover {
+    background-color: #cfd8dc;
+  }
